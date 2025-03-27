@@ -1,0 +1,27 @@
+/* Larger Screens (temples-large.css) */
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    main {
+        max-width: 80%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
