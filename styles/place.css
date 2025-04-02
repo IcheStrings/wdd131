@@ -1,5 +1,4 @@
 /* Global Styles */
-
 :root {
     --primary-color: #d32f2f;
     --secondary-color: #388e3c;
@@ -54,15 +53,10 @@ h2 {
     display: none; /* Hide by default */
 }
 
+/* Responsive Layout */
 @media (min-width: 768px) {
     .weather-icon {
         display: inline; /* Show emoticon on wider screens */
-    }
-}
-
-@media (max-width: 767px) {
-    .weather-icon {
-        display: inline; /* Show SVG on mobile */
     }
 }
 
@@ -72,5 +66,3 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-
-
