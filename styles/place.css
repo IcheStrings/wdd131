@@ -1,10 +1,11 @@
 /* Global Styles */
+
 :root {
     --primary-color: #d32f2f;
     --secondary-color: #388e3c;
     --text-color: #333;
     --background-color: #f5f5f5;
-    --font-family: Arial, sans-serif;
+    --font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -21,6 +22,11 @@ header {
     color: white;
     padding: 1rem;
     font-size: 1.5rem;
+}
+
+.icon {
+    color: yellow;
+    font-size: 1.2rem;
 }
 
 .hero img {
@@ -67,21 +73,4 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsive Layout */
-@media (min-width: 768px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        padding: 2rem;
-    }
 
-    .hero img {
-        width: 80%;
-    }
-
-    .data, .weather {
-        width: 45%;
-    }
-}
