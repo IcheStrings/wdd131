@@ -54,7 +54,7 @@ const temples = [
     location: "Tokyo, Japan",
     dedicated: "October 27, 1980",
     area: "52,590 sq ft",
-    imageUrl: "images/images/isaac-quick-Cph0XGvr8ss-unsplash.jpg",
+    imageUrl: "/images/isaac-quick-Cph0XGvr8ss-unsplash.jpg",
     imageAlt: "Tokyo Japan Temple"
   },
   {
@@ -62,15 +62,15 @@ const temples = [
     location: "Cape Town, South Africa",
     dedicated: "Announced April 4, 2021",
     area: "9,500 sq ft",
-    imageUrl: "images/images/isabella-quirino-HA3mkJkfOD0-unsplash.jpg",
+    imageUrl: "/images/isabella-quirino-HA3mkJkfOD0-unsplash.jpg",
     imageAlt: "Rendering of Cape Town South Africa Temple"
-  }
+  },
   {
     templeName: "Rome Italy Temple",
     location: "Rome, Italy",
     dedicated: "March 10, 2019",
     area: "40,000 sq ft",
-    imageUrl: "images/images/oksana-savinova-RkU9chJUxc4-unsplash.jpg",
+    imageUrl: "/images/oksana-savinova-RkU9chJUxc4-unsplash.jpg",
     imageAlt: "Rome Italy Temple"
   },
   
