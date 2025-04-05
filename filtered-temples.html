@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filtered Temple Gallery</title>
+  <meta name="description" content="Filter and explore temples by size, age, and location."/>
+  <meta name="author" content="Ichechuku Enwuka"/>
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)" />
+  <script defer src="scripts/filtered-temples.js"></script>
+  <script>
+    console.log("Temple Data:", temples); 
+  </script>
+  
+</head>
+<body>
+  <header>
+    <h1>Filtered Temple Gallery</h1>
+    <button class="menu-toggle" id="menu-btn" aria-label="Toggle navigation menu">☰</button>
+    <nav class="menu" id="nav-menu" aria-label="Main navigation">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Temples by Category</h2>
+    <section class="gallery" id="temple-gallery">
+      <!-- Temple cards will be injected here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> 🌸 Ichechuku Enwuka 🌸 Nigeria</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
