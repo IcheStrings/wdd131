@@ -4,19 +4,14 @@
     }
   
     nav {
-      display: block !important; /* Ensure nav is always visible on large screens */
-    }
-  
-    nav a {
-      margin: 0 1rem;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
     }
   
     .gallery {
-      text-align: center;
-    }
-  
-    .gallery figure {
-      width: 30%;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
   
     main {
