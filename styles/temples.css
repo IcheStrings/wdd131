@@ -1,5 +1,4 @@
-/* Google Font */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -40,6 +39,12 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #FFD700; /* Gold hover/focus color */
 }
 
 main {
