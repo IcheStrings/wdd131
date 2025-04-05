@@ -1,5 +1,4 @@
-/* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 
 :root {
     --primary-color: #d32f2f;
@@ -92,3 +91,13 @@
       display: none;
     }
   }
+  h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 0.5rem auto 1rem;
+    border-radius: 4px;
+  }
+  
