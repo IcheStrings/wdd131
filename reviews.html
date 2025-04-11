@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmation | DriveSafe Hub</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+  <header>
+    <h1>DriveSafe Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="license-renewal.html">License Renewal</a>
+      <a href="vehicle-renewal.html">Vehicle Renewal</a>
+    </nav>
+  </header>
+
+  <main class="confirmation">
+    <h2>Thank You!</h2>
+    <p>Your request has been submitted successfully.</p>
+
+    <section id="review-details"></section>
+
+    <a href="index.html" class="btn">Return Home</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DriveSafe Hub</p>
+  </footer>
+
+  <script>
+    // Display submitted form details from localStorage
+    const reviewSection = document.getElementById('review-details');
+    const licenseData = JSON.parse(localStorage.getItem('licenseRenewal'));
+    const vehicleData = JSON.parse(localStorage.getItem('vehicleRenewal'));
+
+    if (licenseData) {
+      reviewSection.innerHTML = `
+        <h3>License Renewal Summary</h3>
+        <p><strong>Name:</strong> ${licenseData.name}</p>
+        <p><strong>License Number:</strong> ${licenseData.licenseNumber}</p>
+        <p><strong>Date of Birth:</strong> ${licenseData.dob}</p>
+        <p><strong>Expiry:</strong> ${licenseData.expiry}</p>
+        <p><strong>Comments:</strong> ${licenseData.comments}</p>
+      `;
+    } else if (vehicleData) {
+      reviewSection.innerHTML = `
+        <h3>Vehicle Document Renewal Summary</h3>
+        <p><strong>Owner:</strong> ${vehicleData.ownerName}</p>
+        <p><strong>Plate Number:</strong> ${vehicleData.plateNumber}</p>
+        <p><strong>Vehicle Type:</strong> ${vehicleData.vehicleType}</p>
+        <p><strong>Document:</strong> ${vehicleData.docType}</p>
+        <p><strong>Remarks:</strong> ${vehicleData.remarks}</p>
+      `;
+    }
+  </script>
+</body>
+</html>

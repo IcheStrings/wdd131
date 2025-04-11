@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Renew your driver's license online with AA Licensing Hub" />
+  <title>Driver's License Renewal | AA Licensing Hub</title>
+  <link rel="stylesheet" href="styles/project.css" />
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <nav class="nav">
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="license.html">Apply</a></li>
+        <li><a href="license-renewal.html" class="active">Renew License</a></li>
+        <li><a href="vehicle-renewal.html">Renew Documents</a></li>
+        <li><a href="form.html">Review Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text" data-aos="fade-up">
+      <h1>Renew Your Driver's License</h1>
+      <p>Quickly update and renew your driver's license online without hassle.</p>
+    </div>
+    <div class="hero-image" style="background-image: url('images/renew-license.jpg');"></div>
+  </section>
+
+  <section class="quick-links">
+    <a href="license.html" class="cta-button">Apply for New License</a>
+    <a href="vehicle-renewal.html" class="cta-button">Renew Vehicle Docs</a>
+    <a href="form.html" class="cta-button">Review Submissions</a>
+  </section>
+
+  <main class="info-grid">
+    <div class="info-box renewal-box" data-aos="fade-up" data-aos-delay="200">
+      <h2>🚗 Driver’s License Renewal Form</h2>
+      <p>Please fill out the form below to renew your driver’s license.</p>
+      <form id="licenseRenewalForm">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="licenseNumber">Driver’s License Number</label>
+        <input type="text" id="licenseNumber" name="licenseNumber" required />
+
+        <label for="expirationDate">Current Expiration Date</label>
+        <input type="date" id="expirationDate" name="expirationDate" required />
+
+        <label for="renewalReason">Reason for Renewal</label>
+        <textarea id="renewalReason" name="renewalReason" rows="3"></textarea>
+
+        <button type="submit" class="cta-button">Submit Renewal</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AA Licensing Hub | <a href="references.html">References</a></p>
+  </footer>
+
+  <script src="scripts/project.js"></script>
+</body>
+</html>

@@ -15,4 +15,17 @@ const products = [
       select.appendChild(option);
     });
   });
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.vehicle-form');
+  
+  
+    
+  
+      // Show confirmation message
+      alert("✅ Your vehicle registration application has been submitted successfully!");
+  
+      // Clear form
+      form.reset();
+    });
+  
   
